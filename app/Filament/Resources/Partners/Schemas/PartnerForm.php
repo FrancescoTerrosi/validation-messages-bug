@@ -23,7 +23,7 @@ class PartnerForm
                     ->numeric()
                     ->minValue(1)
                     ->validationMessages([
-                        'min:1' => 'Inserire un valore valido (maggiore di 1)',
+                        'min' => 'Inserire un valore valido (maggiore di 1)',
                     ])
                     ->label('Quota iscrizione partner'),
                 TextInput::make('percentagefee')
