@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
             $table->text('name');
-            $table->double('enrolfee')->default(0);
-            $table->double('percentagefee')->default(0);
+            $table->double('enrolfee')->nullable();
+            $table->double('percentagefee')->nullable();
             $table->foreignId('partner_parent_id')->nullable();
             $table->timestamps();
         });
